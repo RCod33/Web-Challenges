@@ -1,0 +1,40 @@
+html{
+    font-family: 'outfit';
+}
+
+body{
+    background-color: lightgray;
+}
+
+section{
+    margin: 100px;
+}
+
+section article{
+    margin: 0 auto;
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+section article img{
+    border-radius: 15px;
+    width: 270px;
+    margin: 15px 15px 10px 15px;
+}
+
+section article h1{
+    font-size: 23px;
+    color: rgb(20, 34, 56);
+}
+
+section article p{
+    font-size: 17px;
+    color: rgb(132, 141, 160);
+}
+
+footer section{
+    float: left;
+}
