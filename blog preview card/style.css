@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: rgb(244, 208, 78);
+    font-family: 'Figtree';
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 350px;
+    height: 480px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 6px 6px;
+}
+
+header, article, footer {
+    margin-left: 25px;
+}
+
+header img {
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#box {
+    background-color:  rgb(244, 208, 78);
+    width: 75px;
+    height: 25px;
+    padding-top: 6px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+article h1 {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+article h1:hover {
+    transition: color 0.2s ease;
+    color: rgb(244, 208, 78);
+}
+
+#container img {
+    width: 30px;
+    margin: 0px 0px;
+    float: left;
+}
+
+#container p {
+    float: right;
+    display: inline-block;
+    font-weight: 800;
+    margin: 0px 0px;
+    margin-top: 5px;
+    margin-right: 190px;
+}
+
+.attribution {
+    margin-top: 140px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+.attribution a:hover {
+    color: darkmagenta;
+}
+
+.attribution p {
+    padding-left: 0px;
+    margin: 0px 0px;
+}
