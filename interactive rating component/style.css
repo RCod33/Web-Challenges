@@ -1,0 +1,116 @@
+:root {
+    --orange: rgb(251, 116, 19);
+    --white: rgb(255, 255, 255);
+    --lightGrey: rgb(149, 158, 172);
+    --darkBlue: rgb(37, 45, 55);
+    --midDarkBlue: rgb(29, 36, 46);
+    --veryDarkBlue: rgb(18, 20, 23);
+}
+
+.overpass-font {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font-family: "Overpass";
+    font-size: 16px;
+    color: var(--lightGrey);
+}
+
+.ratingState {
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--midDarkBlue);
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    top: 125px;
+    padding: 30px;
+}
+
+.star {
+    background-color: var(--darkBlue);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.topic {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.unMarkedButton {
+    border: none;
+    background: var(--darkBlue);
+    color: var(--lightGrey);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.unMarkedButton:hover {
+    background-color: var(--orange);
+    color: black;
+}
+
+.markedButton {
+    border: none;
+    background:var(--white);
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.submitButton {
+    align-self: center;
+    border: none;
+    display: block;
+    background-color: var(--orange);
+    color:var(--midDarkBlue);
+    width: 350px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+.attribution {
+    position: absolute;
+    top: 700px;
+}
+
+
+
