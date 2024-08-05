@@ -2,8 +2,8 @@
     --orange: rgb(251, 116, 19);
     --white: rgb(255, 255, 255);
     --lightGrey: rgb(149, 158, 172);
-    --darkBlue: rgb(37, 45, 55);
-    --midDarkBlue: rgb(29, 36, 46);
+    --liteDarkBlue: rgb(37, 45, 55);
+    --darkBlue: rgb(29, 36, 46);
     --veryDarkBlue: rgb(18, 20, 23);
 }
 
@@ -26,19 +26,19 @@ body {
     color: var(--lightGrey);
 }
 
-.ratingState {
+.main {
     margin: 0 auto;
     position: relative;
-    background-color: var(--midDarkBlue);
+    background-color: var(--darkBlue);
     width: 350px;
-    height: 350px;
+    height: 335px;
     border-radius: 30px;
     top: 125px;
     padding: 30px;
 }
 
 .star {
-    background-color: var(--darkBlue);
+    background-color: var(--liteDarkBlue);
     padding: 10px;
     border-radius: 50%;
     margin-bottom: 30px;
@@ -55,29 +55,40 @@ body {
     margin-bottom: 20px;
 }
 
-.buttonDiv{
+form {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    height: 100px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.unMarkedButton {
-    border: none;
-    background: var(--darkBlue);
-    color: var(--lightGrey);
+.rateButton {
+    display: flex;
+}
+
+.rateButton input[type = "radio"] {
+    display: none;
+}
+
+.rateButton label {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--liteDarkBlue);
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     transition: background-color 0.2s ease;
+    border-radius: 100%;
     cursor: pointer;
 }
 
-.unMarkedButton:hover {
+.rateButton label:hover {
     background-color: var(--orange);
     color: black;
 }
 
-.markedButton {
+.rateButton input[type = "radio"]:checked + label {
     border: none;
     background:var(--white);
     color: black;
@@ -88,18 +99,18 @@ body {
 }
 
 .submitButton {
-    align-self: center;
     border: none;
-    display: block;
     background-color: var(--orange);
-    color:var(--midDarkBlue);
+    color:var(--darkBlue);
     width: 350px;
     height: 40px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
 }
 
 .submitButton:hover {
