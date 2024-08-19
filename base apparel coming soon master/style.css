@@ -1,0 +1,218 @@
+/* Restart and Initialitiation */
+:root {
+    --desaturatedRed: rgb(206, 151, 151);
+    --softRed: rgb(249, 98, 98);
+    --darkGrayishRed: rgb(65, 58, 58);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.josefin-sans-font {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+    display: flexbox;
+    font-size: 16px;
+    font-family: "Josefin Sans";
+    color: var(--darkGrayishRed);
+}
+
+
+/* General */
+.conteiner-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.title span {
+    font-weight: 300;
+    color: var(--desaturatedRed);
+}
+
+.description {
+    color: var(--desaturatedRed);
+}
+
+#submit {
+    display: none;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid var(--desaturatedRed);
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.form-inline input[type="email"] {
+    width: 78%;
+    border: none;
+    margin-left: 20px;
+}
+
+.form-inline input[type="email"]::placeholder {
+    color: var(--desaturatedRed);
+}
+
+.form-inline input[type="email"]:focus {
+    outline: none;
+}
+
+.submitButton {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(135deg, rgb(248, 191, 191), rgb(238, 140, 140));   
+    height: 106%;
+    cursor: pointer;
+}
+
+.textAlert {
+    position: relative;
+    font-size: 1em;
+    margin-top: 10px;
+    color: var(--softRed);
+}
+
+/* Mobile Style */
+@media screen and (max-width: 480px) {
+    .logo {
+        margin: 40px 0 40px 40px;
+    }
+    
+    .conteiner-fluid {
+        text-align: center;
+    }
+    
+    .heroMobile {
+        width: 100%;
+    }
+
+    .heroDesktop {
+        width: 100%;
+        min-width: 400px;
+        height: 560px;
+    }
+    
+    .title{
+        margin-top: 60px;
+        font-size: 4rem;
+    }
+
+    .description {
+        margin: 15px 50px;
+    }
+    
+    .form-inline {
+        height: 45px;
+        width: 360px;
+        margin: 0 auto;
+    }
+    
+    .submitButton {
+        width: 60px;
+        left: 2px;
+        border-radius: 25px;
+    }
+
+    .submitButton:hover{
+        background: none;
+        background-color: rgb(248, 191, 191);
+        width: 65px;
+        box-shadow: 0px 10px 15px var(--desaturatedRed);
+    }
+
+    .iconError {
+        position: relative;
+        right: 15px;
+        height: 50%;
+    }
+    
+    .textAlert {
+        right: 16%;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+
+    .articleContainer {
+        display: flexbox;
+        width: 55%;
+        padding: 50px 100px 0px 150px;
+        overflow: auto;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 125px;
+    }
+
+    .imgContainer {
+        width: 45%;
+    }
+
+    .heroDesktop {
+        width: 100%;
+        min-width: 400px;
+        height: 800px;
+    }
+
+    .submitButton:hover{
+        background: none;
+        background-color: rgb(248, 191, 191);
+        width: 100px;
+        box-shadow: 0px 10px 15px var(--desaturatedRed);
+    }
+
+    .title {
+        font-size: 4em;
+        letter-spacing: 20px;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        margin-bottom: 50px;
+    }
+
+    .form-inline {
+        position: relative;
+        right: 5%;
+        height: 50px;
+        width: 425px;
+        margin: 0 auto;
+    }
+
+    .submitButton {
+        width: 95px;
+        border-radius: 25px;
+        left: 14px;
+        transition: width 0.1s ease-out;
+        transition: box-shadow 0.2s ease-out;
+    }
+
+
+    .textAlert {
+        left: 20px;
+    }
+}
+
+.attribution {
+    position: relative;
+    top: 20px;
+}
